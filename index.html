@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Randomizer</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li id="random-number">Number</li>
+        <li id="random-person">Person</li>
+        <li id="yes-no">Yes no</li>
+      </ul>
+    </nav>
+
+    <h1 class="title">Randomizer</h1>
+
+    <section class="random-number-section">
+      <div class="random-number">
+        <h3 class="random-number-title">Pick a random number between:</h3>
+        <div>
+          <div>
+            <label for="random-number-min">Min:</label>
+            <input type="number" id="random-number-min" />
+          </div>
+          <h3>and</h3>
+          <div>
+            <label for="random-number-max">Max:</label>
+            <input type="number" id="random-number-max" />
+          </div>
+        </div>
+        <button id="random-number-button">Pick</button>
+        <h3 id="random-number-result"></h3>
+      </div>
+    </section>
+
+    <section class="random-person-section none">
+      <div class="random-person">
+        <h3 class="random-person-title">
+          Enter the name of everyone separated by commas.
+        </h3>
+        <label for="random-person-input">(Elliot,Joanna,Trenton)</label>
+        <input type="text" id="random-person-input" />
+        <button id="random-person-button">Pick</button>
+        <h3 id="random-person-result"></h3>
+      </div>
+    </section>
+
+    <section class="yes-no-section none">
+      <div class="yes-no">
+        <button id="yes-no-button">Should I?</button>
+        <h3 id="yes-no-result"></h3>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

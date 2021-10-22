@@ -1,0 +1,179 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to left, #e0bbe4, #ffdfd3);
+}
+
+.none {
+  display: none;
+}
+
+/*  Nav */
+
+nav {
+  width: 60%;
+  height: 100px;
+  margin: auto;
+}
+
+.nav-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-list > li {
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+}
+
+.nav-list > li:hover {
+  color: grey;
+}
+
+@media (max-width: 700px) {
+  nav {
+    width: 100%;
+  }
+}
+
+/* Title */
+
+.title {
+  text-align: center;
+  margin: 50px;
+}
+
+/* Random number */
+
+.random-number,
+.random-person,
+.yes-no {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 220px;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+@media (max-width: 500px) {
+  .random-number,
+  .random-person,
+  .yes-no {
+    width: 95%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+  .random-number,
+  .random-person,
+  .yes-no {
+    position: relative;
+  }
+}
+
+@media (orientation: portrait) {
+  .random-number,
+  .random-person,
+  .yes-no {
+    top: 20vh;
+  }
+}
+
+.random-number-title,
+.random-person-title {
+  text-align: center;
+}
+
+.random-number > div {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+  align-items: flex-end;
+}
+
+.random-number > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.random-number > div > div > label {
+  text-align: center;
+}
+
+.random-number > div > div > input {
+  background: none;
+  border: 1px solid lightcoral;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+#random-number-button,
+#random-person-button {
+  width: 40%;
+  margin: auto;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: lightcoral;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+#random-number-result,
+#random-person-result,
+#yes-no-result {
+  text-align: center;
+  margin: 30px auto 10px auto;
+}
+
+#yes-no-result {
+  padding: 70px;
+}
+
+/* Random person */
+
+.random-person > label {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.random-person > input {
+  width: 70%;
+  margin: 30px auto;
+  background: none;
+  border: 1px solid lightcoral;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Yes No */
+
+.yes-no > button {
+  width: 40%;
+  font-size: 2rem;
+  background: lightcoral;
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 5px;
+}
